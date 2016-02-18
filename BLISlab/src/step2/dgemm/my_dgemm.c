@@ -51,7 +51,7 @@
 #include <bl_dgemm.h>
 #define min( i, j ) ( (i)<(j) ? (i): (j) )
 
-inline void packA_mcxkc_d(
+void packA_mcxkc_d(
         int    m,
         int    k,
         double *XA,
@@ -85,7 +85,7 @@ inline void packA_mcxkc_d(
  * --------------------------------------------------------------------------
  */
 
-inline void packB_kcxnc_d(
+void packB_kcxnc_d(
         int    n,
         int    k,
         double *XB,
